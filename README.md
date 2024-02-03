@@ -1,1 +1,1 @@
-https://github.com/maxL-web/slozhno-sosredotochitsyag
+https://github.com/maxL-web/slozhno-sosredotochitsya
