@@ -1,0 +1,369 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  max-width: 1024px;
+  background-color: var(--bg-color);
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 20px 0;
+  height: 100vh;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  align-items: center;
+}
+
+.header__theme-menu {
+  align-self: start;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--accent-color);
+  cursor: pointer;
+  background: none;
+  padding: 2.5px 12px;
+  font-size: 18px;
+  line-height: 100%;
+  padding: 1.5px 13px;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: 1px solid var(--accent-color);
+  outline-offset: 1px;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 116px;
+  margin-left: -2%;
+  padding-top: 276px;
+  padding-bottom: 115px;
+}
+
+.header__content-title {
+  font-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: var(--title-color);
+  text-shadow: 4px 4px 0px #ff0070;
+  font-weight: 700;
+  line-height: 82.5%;
+  margin-left: -23px;
+}
+
+.header__content-text {
+  justify-self: end;
+  align-self: center;
+  max-width: 491px;
+}
+
+.text-decoration {
+  color: var(--heading-color);
+  background-color: var(--heading-bg-color);
+  font-weight: 700;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-text {
+  position: absolute;
+  color: var(--accent-color);
+  right: 8px;
+  top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.decorated-text::after {
+  content: "";
+  align-self: center;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  width: 25px;
+  height: 25px;
+  right: 0;
+  top: 20px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  width: 25px;
+  height: 25px;
+  left: 0;
+  bottom: 20px;
+}
+
+.main {
+  margin-bottom: 60px;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.content__title {
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  max-width: 315px;
+}
+
+.content__list-subtitle {
+  font-size: 18px;
+}
+
+.content__list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content__list-text {
+  color: var(--main-text-color);
+}
+
+.content__font-normal {
+  font-weight: 400;
+}
+
+.questions-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.questions__list {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ask__list {
+  display: flex;
+  gap: 20px;
+}
+
+.ask__item {
+  max-width: 315px;
+}
+
+.ask__title {
+  padding-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery__title {
+  font-size: 18px;
+}
+
+.gallery__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery__list-item:nth-child(1) {
+  grid-column: 1 / 3;
+}
+
+.gallery__list-item:nth-child(2) {
+  grid-row: span 2;
+}
+
+.gallery__list-item:nth-child(3) {
+  grid-row: 2 / 4;
+}
+
+.gallery__list-item:last-child {
+  grid-column: 2 / 4;
+}
+
+.footer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.footer__title {
+  text-align: center;
+  font-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: var(--title-color);
+  text-shadow: 2px 2px 0px #ff0070;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+@media (max-width: 768px) {
+  .header__theme-menu-list {
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 171px;
+  }
+
+  .header__content-text {
+    max-width: 364px;
+  }
+
+  .content__title {
+    max-width: 236px;
+  }
+
+  /* MAIN */
+
+  .content__list-item {
+    max-width: 472px;
+  }
+
+  .ask__list {
+    flex-direction: column;
+  }
+
+  .ask__item {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .page {
+    padding: 0 10px;
+  }
+
+  .header {
+    padding: 10px 0;
+    margin-bottom: 40px;
+  }
+
+  .main {
+    margin-bottom: 40px;
+  }
+
+  .header__theme-menu-list {
+    padding-top: 65px;
+  }
+
+  .header__content {
+    gap: 55px;
+    margin: 0;
+  }
+
+  .header__content-title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin: 0px;
+  }
+
+  .header__content-text {
+    width: 100%;
+  }
+
+  .decorated-zone::after {
+    top: 10px;
+  }
+
+  .decorated-zone::before {
+    bottom: 10px;
+  }
+
+  .decorated-text {
+    top: 10px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .content__title {
+    max-width: 100%;
+  }
+
+  .questions-block {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .ask-block {
+    margin: 0;
+  }
+
+  .gallery {
+    gap: 10px;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
