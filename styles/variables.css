@@ -4,38 +4,19 @@
 */
 
 :root {
-  --font-family: "IBM Plex mono";
+  --accent-color: #ff0070;
+  --main-text-color: #f1b2ce;
+  --heading-color: #000028;
+  --heading-bg-color: #ff0070;
+  --title-color: #db00ff;
+  --bg-color: #000028;
+  --background-image: url(../images/cover-image-dark.png);
+  --font-family: "IBM Plex mono", monospace;
+}
+.theme_light .decorated-text {
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent-color: #ff0070;
-    --main-text-color: #f1b2ce;
-    --heading-color: #000028;
-    --heading-bg-color: #ff0070;
-    --title-color: #db00ff;
-    --bg-color: #000028;
-    --background-image: url(../images/cover-image-dark.png);
-  }
-  .theme_light .decorated-text {
-    display: none;
-  }
-}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --accent-color: #353430;
-    --main-text-color: var(--accent-color);
-    --heading-color: var(--accent-color);
-    --heading-bg-color: #ff8dcb;
-    --title-color: #ffc2e6;
-    --bg-color: #fff1f7;
-    --background-image: url(../images/cover-image-light.png);
-  }
-  .theme_light .decorated-text {
-    display: none;
-  }
-  .theme_auto .decorated-text {
-    display: none;
-  }
-}
+
+
