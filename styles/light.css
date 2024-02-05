@@ -6,26 +6,27 @@
 
 .page.theme_light {
   --accent-color: #353430;
+  --shadow-color: #ffc2e6;
+  --hover-color: rgba(50, 49, 45, 0.4);
   --main-text-color: var(--accent-color);
   --heading-color: var(--accent-color);
   --heading-bg-color: #ff8dcb;
   --title-color: #ffc2e6;
   --bg-color: #fff1f7;
   --background-image: url(../images/cover-image-light.png);
-  --font-family: "IBM Plex mono", monospace;
 }
-
 
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #353430;
+    --shadow-color: #ffc2e6;
     --main-text-color: var(--accent-color);
+    --hover-color: rgba(50, 49, 45, 0.4);
     --heading-color: var(--accent-color);
     --heading-bg-color: #ff8dcb;
     --title-color: #ffc2e6;
     --bg-color: #fff1f7;
     --background-image: url(../images/cover-image-light.png);
-    --font-family: "IBM Plex mono", monospace;
   }
   .theme_light .decorated-text {
     display: none;

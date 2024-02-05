@@ -5,6 +5,8 @@
 
 :root {
   --accent-color: #ff0070;
+  --shadow-color: var(--accent-color);
+  --hover-color: rgba(255, 0, 112, 0.4);
   --main-text-color: #f1b2ce;
   --heading-color: #000028;
   --heading-bg-color: #ff0070;
@@ -16,7 +18,3 @@
 .theme_light .decorated-text {
   display: none;
 }
-
-
-
-

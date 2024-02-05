@@ -10,25 +10,27 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #ff0070;
+  --shadow-color: var(--accent-color);
+  --hover-color: rgba(255, 0, 112, 0.4);
   --main-text-color: #f1b2ce;
   --heading-color: #000028;
   --heading-bg-color: #ff0070;
   --title-color: #db00ff;
   --bg-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
-  --font-family: "IBM Plex mono", monospace;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --accent-color: #ff0070;
+    --shadow-color: var(--accent-color);
+    --hover-color: rgba(255, 0, 112, 0.4);
     --main-text-color: #f1b2ce;
     --heading-color: #000028;
     --heading-bg-color: #ff0070;
     --title-color: #db00ff;
     --bg-color: #000028;
     --background-image: url(../images/cover-image-dark.png);
-    --font-family: "IBM Plex mono", monospace;
   }
   .theme_light .decorated-text {
     display: none;
